@@ -2,34 +2,19 @@ import React from 'react'
 import Image from 'next/image'
 
 import logo from "../public/logo.png"
-function Navbar () {
+function Navbar() {
   return (
     <>
-      <header className=" text-black body font-sans">
-
-
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row  items-center">
-
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Image className="container flex" src={logo} alt="Banner" width={100} height={100} />
-          </a>
-
-          <nav className="md:ml-auto flex flex-wrap item-center text-base justify-center"  >
-
-            <a className="mr-20  text-black text-bold"> My Vision </a>
-            <a className="mr-20 text-black text-bold"> Services </a>
-            <a className="mr-20 text-black text-bold"> Work </a>
-            <a className="mr-20 text-black text-bold"> About Us</a>
-           
-          </nav>
-
-
-
-
-        </div>
-      </header>
-
-
+      <div className=" bg-yellow-100 flex flex-auto items-center justify-center full">
+        <nav  className="items-center flex" >
+          <Image className="flex py-10 px-10 my-10 mx-10
+          n" src={logo} alt="Banner" width={200} height={200} />
+          <a className="border-solid border-2 border-indigo-600 flex py-1 px-1 my-20 mx-20 items-center  text-black "> My Vision </a>
+          <a className="border-solid border-2 border-indigo-600 flex py-1 px-1 my-10 mx-10 items-center text-black "> Services </a>
+          <a className="border-solid border-2 border-indigo-600 flex py-1 px-1 my-10 mx-10 items-center text-black "> Work </a>
+          <a className="border-solid border-2 border-indigo-600 flex py-1 px-1 my-10 mx-10 items-center textt-black"> About Us</a>
+        </nav>
+      </div>
     </>
 
 

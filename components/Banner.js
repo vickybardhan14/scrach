@@ -1,15 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
+import banner from '../public/banner.jpg'
 
 
 function Banner () {
     return (
-        <>
-            {/* <div className='bg-[url("/banner.jpg")] h-96 w-full  bg-cover bg-center justify-center absolute mix-blend-overlay  flex items-center'> */}
-                <div  >
-                    <h1 className=' text-6xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-green-500 to-red-500 items-center flex justify-center m-10  '>Hello I am Chander Shekher</h1>
-                </div>
-            {/* </div> */}
-        </>
+    
+       <div  className="items-center flex" >
+             <Image className=" Banner" src={banner} alt="Banner" width={200} height={200} />
+        </div>
     )
 }
 
