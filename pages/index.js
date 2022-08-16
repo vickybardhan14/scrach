@@ -1,12 +1,16 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import Banner from "../components/Banner"
+
+import Footer from '../components/Footer'
+import Content from '../components/Content'
+
+
 
 
 
 export default function Home () {
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Vicky Bardhan</title>
         <meta name="description" content="Full Website Development frontend and backend website development" />
@@ -14,7 +18,9 @@ export default function Home () {
       </Head>
       <main>
         <Navbar />
-      
+       <Content/>
+       <Footer/>
+
   
         
       </main>
